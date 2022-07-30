@@ -48,7 +48,7 @@
 
             <!-- Nested Row within Card Body -->
             <div class="my-5 container bg-warning">
-                <form onsubmit="return reg_valid()" action="register.php" method="post" class="row g-3">
+                <form onsubmit="return reg_valid()" method="post" class="row g-3">
 
                     <div class="col-md-4">
                         <label for="first_name" class="form-label">First Name</label>
@@ -773,7 +773,7 @@
     
     
 
-    <script type="text/javascript" src="valid.js"></script>
+    <script type="text/javascript" src="reg_valid.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

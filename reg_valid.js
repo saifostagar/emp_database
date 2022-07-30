@@ -1,4 +1,4 @@
-function valid() {
+function reg_valid() {
     var first_name = document.getElementById("first_name").value;
     var middle_name = document.getElementById("middle_name").value;
     var last_name = document.getElementById("last_name").value;
@@ -89,7 +89,7 @@ function valid() {
         return false;
     }
 
-    if ((namecheck.test(middle_name)) || middle_name==null) {
+    if ((namecheck.test(middle_name)) || middle_name==waiwait) {
         document.getElementById('middle_nameerror').innerHTML = " ";
 
     }
