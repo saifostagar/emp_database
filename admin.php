@@ -12,7 +12,7 @@
 <body>
   
 
-  <?php
+    <?php
 
     $server = "localhost:3307";
     $username= "root";
@@ -39,46 +39,74 @@
     //print_r($data);
     ?>
 
-  <center>
-    <h4>List of Employee</h4>
-  </center>
-  <div class="container">
+    <center>
+      <h4>List of Employee</h4>
+    </center>
+    <div class="container border border-3">
     
+      <div class="row">
+        <div class="col-sm border font-weight-bold">
+          <center>Name</center>
+        </div>
+        <div class="col-sm border font-weight-bold">
+          <center>Employee ID</center>
+        </div>
+        <div class="col-sm border">
+          <center>Gender</center>
+        </div>
+
+        <div class="col-sm border">
+          <center>Mobile Number</center>
+        </div>
+
+        <div class="col-sm border">
+          <center>Email ID</center>
+        </div>
+
+        <div class="col-sm border">
+          <center>Action</center>
+        </div>
+
+
+
+      </div>
+
       <?php foreach($data as $emp){?>
 
-      <div class="col s6 md3">
-      
-        <div class="card z-depth-0 m-2">
-          <div class="card-context center m-2">
-            <div>
-              <h6>
-                <?php echo htmlspecialchars($emp['first_name']);?>
-                <?php echo htmlspecialchars($emp['middle_name']);?>
-                <?php echo htmlspecialchars($emp['last_name']);?>
-                <?php echo "(SHT00".htmlspecialchars($emp['emp_id'].")");?>
-              </h6>
-              
-              <?php echo htmlspecialchars($emp['gender']);?>
-              <?php echo ",".htmlspecialchars($emp['mobile_number']);?>
-              <?php echo ",".htmlspecialchars($emp['email']);?>
 
-            </div>
-
-
-
-            <div>
-              
-            </div>
-          </div>
+      <div class="row border">
+        <div class="col-sm border">
+          <?php echo htmlspecialchars($emp['first_name']);?>
+          <?php echo htmlspecialchars($emp['middle_name']);?>
+          <?php echo htmlspecialchars($emp['last_name']);?>
         </div>
-      </div>
+        <div class="col-sm border">
+          <?php echo "SHT00".htmlspecialchars($emp['emp_id']);?>
+        </div>
+        <div class="col-sm border">
+          <?php echo htmlspecialchars($emp['gender']);?>
+        </div>
+
+        <div class="col-sm border">
+          <?php echo htmlspecialchars($emp['mobile_number']);?>
+        </div>
+
+        <div class="col-sm border">
+          <?php echo htmlspecialchars($emp['email']);?>
+        </div>
+        
+        <div class="col-sm border">
+          Edit | Delete
+        </div>
+
+
+      
+    </div>
     <?php } ?>
 
+
+
   </div>
-
-
-
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

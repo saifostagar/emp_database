@@ -12,7 +12,7 @@
 <body class="bg-primary">
 	<div><center><h1>Login</h1></center></div>
 <div class="card card-body">
-	<form action="admin.php" method="post" class="">
+	<form action="for/view.php" method="post" class="">
               <div class="m-2">
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -44,5 +44,9 @@
 			  <center><input  type="button" onClick="location.href='register.php'" class="btn btn-success m-2" value="Create New Account"></center>
             </div>
 	</form>
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="login_form.js"></script>
 </body>
 </html>
